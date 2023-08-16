@@ -92,5 +92,13 @@ function calscore(e){
         var answerbank= document.getElementById('answerbank');
         var answer= doucument.getELementById('answer');
         answer.style.display= 'block';
+        scorecard.style.display= 'block';
+        for(var a=0;a<questionbank.length;a++)
+        {     
+            Var list= document.createElement('li');
+            list.innerhtml=questionbank[a]
+        }    
     }
+
+    
     displayQuestion();
