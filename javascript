@@ -89,4 +89,8 @@ function calscore(e){
 
     //function to check answer
     function checkAnswer(){
+        var answerbank= document.getElementById('answerbank');
+        var answer= doucument.getELementById('answer');
+        answer.style.display= 'block';
+    }
     displayQuestion();
