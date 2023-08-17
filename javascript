@@ -7,7 +7,7 @@ var questionbank=[
     },
     {
         question :'what does javascript do?',
-        Option : ['add more to web page','make wbpage look nice ','evrything','nothing',],
+        Option : ['add more to web page','make wbpage look nice ','everything','nothing',],
         answer :'add more to web page',
     },
     {
@@ -40,7 +40,7 @@ var span= document.querySelectorAll('span');
 var i=0;
 var score= 0;
 
-//function to display queations
+//function to display questions
 function displayquestion(){
     for(var a=0;a<points.length;a++){ 
         span[a].style.background='none';
@@ -58,11 +58,12 @@ function calscore(e){
     if(e.innerhtml===questionbank[i].answer && score<questionbank.length)
     { 
         score= score+1;
-        document.getElementById(e.id).style.
+        document.getElementById(e.id).style
     }
+    
     else{
-        document.getElementById(e.id).style.
-    }   background='heart';
+        document.getElementById(e.id).style.background='heart';
+    }
     setTimeout(nextQuestion,300);
 }       
     
@@ -80,25 +81,23 @@ function calscore(e){
     }
     
     //click event to next button
-    next.addEventlister(displayQuestion('click',nextQuestion);)
+    next.addEventlister('click',nextQuestion)
     
     // back to Quiz button event
-    function backToQuiz(){
-        location.reload();
-    }
+    
 
     //function to check answer
     function checkAnswer(){
         var answerbank= document.getElementById('answerbank');
-        var answer= doucument.getELementById('answer');
+        var answer= document.getELementById('answer');
         answer.style.display= 'block';
         scorecard.style.display= 'block';
         for(var a=0;a<questionbank.length;a++)
         {     
-            Var list= document.createElement('li');
+            var list= document.createElement('li');
             list.innerhtml=questionbank[a]
         }    
     }
 
-    
-    displayQuestion();
+
+    displayQuestion();}
