@@ -1,20 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz website html css JS</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Coding Quiz</title>
+    <link rek="stylesheet" href="style.css">
 </head>
-
 <body>
+    <h1 id="title"></h1>Coding Quiz</h1>
+    <!--quiz-container-->
+    <div class="question">
+       <h2 id="question"></h2>
+       
+        <!--question-container-->
+        <div class="questions">
+            <h2 id="question"></h2>
+            <ul type="A">
+                <li class="option"><span
+                id="option0" onclick="calcscore(this)"></span></li>
+                <li class="option"><span
+                id="option1" onclick="calcscore(this)"></span></li>
+                <li class="option"><span></span></li>
+                <li class="option"><span
+                id="option2" onclick="calcscore(this)"></span></il>
+                <li class="option"><span></span></li>
+                <li class="option"><span
+                id="option3"  onclick="calcscore(this)"></span></li>
+                <li class="option"></span></li>
+                  
+                </ul> 
+            <h4 id="start">Start</h4>
+        </div>
 
-   
-        
-           
-    <script scr="question.js"></script>
-    <script src="script.js"></script>
+        <div class="bottons">
+            <bottons type="bottons"
+            class="next"></bottons>
+        </div>
+
+    </div>
+
+    <!-- scoreboard section -->
+    <div id="scoreboard">
+        <img scr="" alt=""/>
+        <h2 id="score-title">Your Score</h2>
+        <h2 id="score"></h2>
+        <button 
+        id="check-answer">check answer</button>
+    </div>
+
+    <!-- answers section -->
+    <div id="scoreboard">
+        <img scr="" alt="">
+        <h2 id="score-title">Your Score</h2>
+        <h2 id="score"></h2>
+        <button 
+        onclick="backToQuiz">back to Quiz</button>
+        <button
+        id="check-answer">onclick='</button>
+    </div>
+    <!-- answer section -->
+    <div id="answerbank">
+        <h2 id="answer"></h2>
+        <ol type="1">
+
+        </ol>
+        <button  id="score-btn"
+        onclick="backTo">back to Quiz</button>
+    </div>
+
+    <!-- javascript file source -->
+    <script src="script.js"></script>{
+        var score = 0;
+    }
 </body>
-</html>
+</html> 
